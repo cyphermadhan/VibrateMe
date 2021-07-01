@@ -1,24 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BasierSquare-SemiBold.otf">
+            <string>BasierSquare-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VibrateMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6x-fA-3ni">
+                                <rect key="frame" x="40" y="318" width="332" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="buttonColourPurple"/>
+                                <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
+                                <state key="normal" title="Light">
+                                    <color key="titleColor" name="textColourPurple"/>
+                                </state>
+                                <connections>
+                                    <action selector="animateLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxa-q9-VAV"/>
+                                    <action selector="vibrateLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sho-hM-DNT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGO-sN-upu">
+                                <rect key="frame" x="41" y="418" width="332" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="buttonColourGreen"/>
+                                <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
+                                <state key="normal" title="Medium">
+                                    <color key="titleColor" name="textColourGreen"/>
+                                </state>
+                                <connections>
+                                    <action selector="animateMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlb-4x-8Lx"/>
+                                    <action selector="vibrateMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tc-Rw-E1w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56R-GH-Gdv">
+                                <rect key="frame" x="41" y="518" width="332" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="buttonColourBlue"/>
+                                <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
+                                <state key="normal" title="Heavy">
+                                    <color key="titleColor" name="textColourBlue"/>
+                                </state>
+                                <connections>
+                                    <action selector="animateHeavy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IO0-LZ-Obr"/>
+                                    <action selector="virbateHeavy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9o-R5-Ny4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vibrate-logo" translatesAutoresizingMaskIntoConstraints="NO" id="eWu-K2-e7K">
+                                <rect key="frame" x="97" y="116" width="220" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" name="textColourPurple"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="textColourPurple"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonHeavy" destination="56R-GH-Gdv" id="spk-cE-ksh"/>
+                        <outlet property="buttonLight" destination="q6x-fA-3ni" id="42Z-3G-806"/>
+                        <outlet property="buttonMedium" destination="fGO-sN-upu" id="fxt-Bt-odO"/>
+                        <outlet property="vibrateLogo" destination="eWu-K2-e7K" id="Drt-q8-8Hz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="vibrate-logo" width="173" height="47"/>
+        <namedColor name="buttonColourBlue">
+            <color red="0.59607843137254901" green="0.84313725490196079" blue="0.97254901960784312" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonColourGreen">
+            <color red="0.56470588235294117" green="0.87450980392156863" blue="0.85098039215686272" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonColourPurple">
+            <color red="0.78823529411764703" green="0.54509803921568623" blue="0.82352941176470584" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColourBlue">
+            <color red="0.0" green="0.33725490196078434" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColourGreen">
+            <color red="0.0" green="0.37254901960784315" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColourPurple">
+            <color red="0.31764705882352939" green="0.10980392156862745" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

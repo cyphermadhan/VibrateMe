@@ -15,6 +15,11 @@
 		F7ED0940268DD41800649438 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7ED093E268DD41800649438 /* LaunchScreen.storyboard */; };
 		F7ED094B268DD41900649438 /* VibrateMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ED094A268DD41900649438 /* VibrateMeTests.swift */; };
 		F7ED0956268DD41900649438 /* VibrateMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ED0955268DD41900649438 /* VibrateMeUITests.swift */; };
+		F7ED0968268DDA1300649438 /* BasierSquare-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7ED0964268DD4E300649438 /* BasierSquare-Bold.otf */; };
+		F7ED0969268DDA1600649438 /* BasierSquare-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7ED0966268DD4E300649438 /* BasierSquare-Medium.otf */; };
+		F7ED096A268DDA1900649438 /* BasierSquare-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7ED0965268DD4E300649438 /* BasierSquare-Regular.otf */; };
+		F7ED096B268DDA1C00649438 /* BasierSquare-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7ED0967268DD4E300649438 /* BasierSquare-SemiBold.otf */; };
+		F7ED096D268DF2BE00649438 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ED096C268DF2BE00649438 /* UIButtonExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		F7ED0951268DD41900649438 /* VibrateMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VibrateMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7ED0955268DD41900649438 /* VibrateMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrateMeUITests.swift; sourceTree = "<group>"; };
 		F7ED0957268DD41900649438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7ED0964268DD4E300649438 /* BasierSquare-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BasierSquare-Bold.otf"; path = "../../../../../Downloads/Basier/Basier_Square_Desktop/BasierSquare-Bold.otf"; sourceTree = "<group>"; };
+		F7ED0965268DD4E300649438 /* BasierSquare-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BasierSquare-Regular.otf"; path = "../../../../../Downloads/Basier/Basier_Square_Desktop/BasierSquare-Regular.otf"; sourceTree = "<group>"; };
+		F7ED0966268DD4E300649438 /* BasierSquare-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BasierSquare-Medium.otf"; path = "../../../../../Downloads/Basier/Basier_Square_Desktop/BasierSquare-Medium.otf"; sourceTree = "<group>"; };
+		F7ED0967268DD4E300649438 /* BasierSquare-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BasierSquare-SemiBold.otf"; path = "../../../../../Downloads/Basier/Basier_Square_Desktop/BasierSquare-SemiBold.otf"; sourceTree = "<group>"; };
+		F7ED096C268DF2BE00649438 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,12 @@
 		F7ED0932268DD41600649438 /* VibrateMe */ = {
 			isa = PBXGroup;
 			children = (
+				F7ED0963268DD4CB00649438 /* Font */,
 				F7ED0933268DD41600649438 /* AppDelegate.swift */,
 				F7ED0935268DD41600649438 /* SceneDelegate.swift */,
 				F7ED0937268DD41600649438 /* ViewController.swift */,
 				F7ED0939268DD41600649438 /* Main.storyboard */,
+				F7ED096C268DF2BE00649438 /* UIButtonExtensions.swift */,
 				F7ED093C268DD41800649438 /* Assets.xcassets */,
 				F7ED093E268DD41800649438 /* LaunchScreen.storyboard */,
 				F7ED0941268DD41900649438 /* Info.plist */,
@@ -126,6 +138,17 @@
 				F7ED0957268DD41900649438 /* Info.plist */,
 			);
 			path = VibrateMeUITests;
+			sourceTree = "<group>";
+		};
+		F7ED0963268DD4CB00649438 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F7ED0964268DD4E300649438 /* BasierSquare-Bold.otf */,
+				F7ED0966268DD4E300649438 /* BasierSquare-Medium.otf */,
+				F7ED0965268DD4E300649438 /* BasierSquare-Regular.otf */,
+				F7ED0967268DD4E300649438 /* BasierSquare-SemiBold.otf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +254,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7ED096B268DDA1C00649438 /* BasierSquare-SemiBold.otf in Resources */,
 				F7ED0940268DD41800649438 /* LaunchScreen.storyboard in Resources */,
+				F7ED096A268DDA1900649438 /* BasierSquare-Regular.otf in Resources */,
+				F7ED0969268DDA1600649438 /* BasierSquare-Medium.otf in Resources */,
+				F7ED0968268DDA1300649438 /* BasierSquare-Bold.otf in Resources */,
 				F7ED093D268DD41800649438 /* Assets.xcassets in Resources */,
 				F7ED093B268DD41600649438 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7ED0938268DD41600649438 /* ViewController.swift in Sources */,
+				F7ED096D268DF2BE00649438 /* UIButtonExtensions.swift in Sources */,
 				F7ED0934268DD41600649438 /* AppDelegate.swift in Sources */,
 				F7ED0936268DD41600649438 /* SceneDelegate.swift in Sources */,
 			);

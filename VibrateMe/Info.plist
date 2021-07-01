@@ -62,5 +62,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>BasierSquare-Regular.otf</string>
+		<string>BasierSquare-Medium.otf</string>
+		<string>BasierSquare-SemiBold.otf</string>
+		<string>BasierSquare-Bold.otf</string>
+	</array>
 </dict>
 </plist>
