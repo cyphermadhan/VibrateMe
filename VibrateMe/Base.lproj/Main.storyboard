@@ -21,49 +21,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6x-fA-3ni">
-                                <rect key="frame" x="40" y="318" width="332" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="buttonColourPurple"/>
-                                <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
-                                <state key="normal" title="Light">
-                                    <color key="titleColor" name="textColourPurple"/>
-                                </state>
-                                <connections>
-                                    <action selector="animateLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxa-q9-VAV"/>
-                                    <action selector="vibrateLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sho-hM-DNT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGO-sN-upu">
-                                <rect key="frame" x="41" y="418" width="332" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" id="dVi-2a-zs6">
+                                <rect key="frame" x="41" y="318" width="332" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="buttonColourGreen"/>
-                                <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
-                                <state key="normal" title="Medium">
-                                    <color key="titleColor" name="textColourGreen"/>
-                                </state>
-                                <connections>
-                                    <action selector="animateMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlb-4x-8Lx"/>
-                                    <action selector="vibrateMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tc-Rw-E1w"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56R-GH-Gdv">
-                                <rect key="frame" x="41" y="518" width="332" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" name="buttonColourBlue"/>
-                                <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
-                                <state key="normal" title="Heavy">
-                                    <color key="titleColor" name="textColourBlue"/>
-                                </state>
-                                <connections>
-                                    <action selector="animateHeavy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IO0-LZ-Obr"/>
-                                    <action selector="virbateHeavy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9o-R5-Ny4"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vibrate-logo" translatesAutoresizingMaskIntoConstraints="NO" id="eWu-K2-e7K">
-                                <rect key="frame" x="97" y="116" width="220" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6x-fA-3ni">
+                                        <rect key="frame" x="0.0" y="0.0" width="332" height="60"/>
+                                        <color key="backgroundColor" name="buttonColourPurple"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="332" id="WbK-vE-88X"/>
+                                            <constraint firstAttribute="height" constant="60" id="sZB-4v-bkv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
+                                        <state key="normal" title="Light">
+                                            <color key="titleColor" name="textColourPurple"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animateLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxa-q9-VAV"/>
+                                            <action selector="vibrateLight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sho-hM-DNT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGO-sN-upu">
+                                        <rect key="frame" x="0.0" y="100" width="332" height="60"/>
+                                        <color key="backgroundColor" name="buttonColourGreen"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Iek-Bh-7bx"/>
+                                            <constraint firstAttribute="width" constant="332" id="ooR-g8-FbP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
+                                        <state key="normal" title="Medium">
+                                            <color key="titleColor" name="textColourGreen"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animateMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlb-4x-8Lx"/>
+                                            <action selector="vibrateMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tc-Rw-E1w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56R-GH-Gdv">
+                                        <rect key="frame" x="0.0" y="200" width="332" height="60"/>
+                                        <color key="backgroundColor" name="buttonColourBlue"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="R6x-yf-S31"/>
+                                            <constraint firstAttribute="width" constant="332" id="cvX-Mi-1Ge"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
+                                        <state key="normal" title="Heavy">
+                                            <color key="titleColor" name="textColourBlue"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="animateHeavy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IO0-LZ-Obr"/>
+                                            <action selector="virbateHeavy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9o-R5-Ny4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" image="vibrate-logo" id="eWu-K2-e7K">
+                                <rect key="frame" x="41" y="185" width="332" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" name="textColourPurple"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Xam-DQ-cas"/>
+                                    <constraint firstAttribute="width" constant="332" id="qbA-EG-8od"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
