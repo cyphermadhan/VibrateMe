@@ -84,6 +84,17 @@
                                     <constraint firstAttribute="width" constant="332" id="qbA-EG-8od"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3I-f7-dca" customClass="RippleableButton" customModule="VibrateMe" customModuleProvider="target">
+                                <rect key="frame" x="41" y="627" width="332" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="buttonColourPurple"/>
+                                <fontDescription key="fontDescription" name="BasierSquare-SemiBold" family="Basier Square" pointSize="18"/>
+                                <color key="tintColor" name="textColourPurple"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,6 +104,7 @@
                         <outlet property="buttonHeavy" destination="56R-GH-Gdv" id="spk-cE-ksh"/>
                         <outlet property="buttonLight" destination="q6x-fA-3ni" id="42Z-3G-806"/>
                         <outlet property="buttonMedium" destination="fGO-sN-upu" id="fxt-Bt-odO"/>
+                        <outlet property="rippleButton" destination="f3I-f7-dca" id="w4M-aA-Y3m"/>
                         <outlet property="vibrateLogo" destination="eWu-K2-e7K" id="Drt-q8-8Hz"/>
                     </connections>
                 </viewController>
